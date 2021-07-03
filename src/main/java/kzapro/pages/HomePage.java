@@ -1,10 +1,11 @@
 package kzapro.pages;
 
+import kzapro.utilities.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends TestBase{
+public class HomePage extends TestBase {
 
     @FindBy(xpath = "//span[text()='Create new board']")
     WebElement createNewBoardLink;

@@ -1,10 +1,11 @@
 package kzapro.pages;
 
+import kzapro.utilities.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateBoardPage extends TestBase{
+public class CreateBoardPage extends TestBase {
 
     @FindBy(xpath = "//input[@placeholder='Add board title']")
     WebElement addBoardTitleTextBox;

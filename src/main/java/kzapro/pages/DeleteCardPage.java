@@ -1,11 +1,12 @@
 package kzapro.pages;
 
+import kzapro.utilities.TestBase;
 import kzapro.utilities.TestUtilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DeleteCardPage extends TestBase{
+public class DeleteCardPage extends TestBase {
 
     @FindBy(xpath = "//span[@class='list-card-title js-card-name']")
     WebElement cardTab;

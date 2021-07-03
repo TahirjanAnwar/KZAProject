@@ -3,11 +3,10 @@ package stepDefinitions;
 import cucumber.api.java.en.*;
 import kzapro.pages.HomePage;
 import kzapro.pages.KZAboardPage;
-import kzapro.pages.TestBase;
+import kzapro.utilities.TestBase;
 import kzapro.utilities.TestUtilities;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class AddLists extends TestBase {
 

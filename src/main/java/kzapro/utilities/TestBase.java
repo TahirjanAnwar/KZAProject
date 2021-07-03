@@ -1,4 +1,4 @@
-package kzapro.pages;
+package kzapro.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import kzapro.utilities.TestUtilities;

@@ -4,7 +4,7 @@ import cucumber.api.java.en.*;
 import kzapro.pages.HomePage;
 import kzapro.pages.LoginPage;
 import kzapro.pages.LogOutPage;
-import kzapro.pages.TestBase;
+import kzapro.utilities.TestBase;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 

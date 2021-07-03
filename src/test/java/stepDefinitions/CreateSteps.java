@@ -5,11 +5,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import kzapro.pages.*;
-import kzapro.utilities.TestUtilities;
+import kzapro.utilities.TestBase;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 
-public class CreateSteps extends TestBase{
+public class CreateSteps extends TestBase {
 
 
         LoginPage loginPage;

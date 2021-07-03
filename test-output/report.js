@@ -1,192 +1,697 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Feature/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/C:/Users/Game%20PC-Maintake/IdeaProjects/KZAProject/Feature/kzacreate.feature");
 formatter.feature({
-  "name": "User should be able to login with valid credential and user should not be",
-  "description": "  able to login with invalid credential.",
+  "name": "KZA create new Board",
+  "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "Login Data Driven",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "User Launch Chrome Browser with URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "User Enters Email as \"\u003cemail\u003e\" and Password as \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Click on Login",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "HomePage should be displayed",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "User Click on Logout link",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Close Browser",
-  "keyword": "Then "
-});
-formatter.examples({
+formatter.background({
   "name": "",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "ustel1111@gmail.com",
-        "Freeuyghur22@@"
-      ]
-    },
-    {
-      "cells": [
-        "admin1@yourstore.com",
-        "admin123"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Login Data Driven",
-  "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Background"
 });
 formatter.step({
-  "name": "User Launch Chrome Browser with URL",
+  "name": "I launch chrome browser",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginNegativeAndPositiveTest.user_Launch_Chrome_Browser()"
+  "location": "CreateSteps.i_launch_chrome_browser()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Enters Email as \"ustel1111@gmail.com\" and Password as \"Freeuyghur22@@\"",
+  "name": "User enters Email",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginNegativeAndPositiveTest.user_Enters_Email_as_and_Password_as(String,String)"
+  "location": "CreateSteps.userEntersEmail()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Login",
+  "name": "click Log with in atlassian button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateSteps.click_Log_with_in_atlassian_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginNegativeAndPositiveTest.click_on_Login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "HomePage should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginNegativeAndPositiveTest.homepage_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Click on Logout link",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginNegativeAndPositiveTest.user_Click_on_Logout_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Close Browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginNegativeAndPositiveTest.close_Browser()"
+  "location": "CreateSteps.userEntersPassword()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Login Data Driven",
+  "name": "Create new Board",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "name": "User Launch Chrome Browser with URL",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginNegativeAndPositiveTest.user_Launch_Chrome_Browser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enters Email as \"admin1@yourstore.com\" and Password as \"admin123\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginNegativeAndPositiveTest.user_Enters_Email_as_and_Password_as(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Login",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginNegativeAndPositiveTest.click_on_Login()"
-});
-formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//span[text()\u003d\u0027Log in\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027TPRODUCTION\u0027, ip: \u0027192.168.2.19\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_292\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\r\n\tat kzapro.pages.LoginPage.clickLoginPassword(LoginPage.java:52)\r\n\tat stepDefinitions.LoginNegativeAndPositiveTest.click_on_Login(LoginNegativeAndPositiveTest.java:36)\r\n\tat ✽.Click on Login(file:Feature/Login.feature:7)\r\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "HomePage should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginNegativeAndPositiveTest.homepage_should_be_displayed()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "User Click on Logout link",
+  "name": "User Clicks Create new board link",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginNegativeAndPositiveTest.user_Click_on_Logout_link()"
+  "location": "CreateSteps.user_Clicks_Create_new_board_link()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "Close Browser",
+  "name": "User enters new board name",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.user_enters_new_board_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "create board button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.create_board_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click cancel arrow",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.clickCancelArrow()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "add list page should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginNegativeAndPositiveTest.close_Browser()"
+  "location": "CreateSteps.add_list_page_should_be_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "I launch chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateSteps.i_launch_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersEmail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click Log with in atlassian button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateSteps.click_Log_with_in_atlassian_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersPassword()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Add list to the board",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I click Test KZA board",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "AddLists.i_click_Test_KZA_board()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enter ToDOList title",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddLists.enter_ToDOList_title()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click ToDoaddlist button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddLists.click_ToDoaddlist_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter InProgress title",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddLists.i_enter_InProgress_title()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click Progressaddlist button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddLists.click_Progressaddlist_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter Done title",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddLists.i_enter_Done_title()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click cancel button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddLists.click_cancel_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "new lists should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddLists.new_lists_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "I launch chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateSteps.i_launch_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersEmail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click Log with in atlassian button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateSteps.click_Log_with_in_atlassian_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersPassword()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Add card to the list",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "User click KZA board",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "AddCardToTheList.user_click_KZA_board()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enter card name",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddCardToTheList.user_enter_card_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click add cart button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCardToTheList.click_add_cart_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click cancel button for add another card",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddCardToTheList.click_cancel_button_for_add_another_card()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "New card we added should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddCardToTheList.new_card_we_added_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "I launch chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateSteps.i_launch_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersEmail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click Log with in atlassian button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateSteps.click_Log_with_in_atlassian_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersPassword()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Update card",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "User click KZA board",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "AddCardToTheList.user_click_KZA_board()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User click card",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "UpdateCard.user_click_card()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click move button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UpdateCard.click_move_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Select In Progress from the list",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "UpdateCard.Select_In_Progress_from_the_list()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User click confirm button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "UpdateCard.user_click_confirm_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click close button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UpdateCard.click_close_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "New card we updated should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "UpdateCard.new_card_we_updated_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "I launch chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateSteps.i_launch_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersEmail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click Log with in atlassian button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateSteps.click_Log_with_in_atlassian_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersPassword()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Delete card",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "User click KZA board",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "AddCardToTheList.user_click_KZA_board()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click card",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "DeleteCard.click_card()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click Archive button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "DeleteCard.click_Archive_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User click delete button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "DeleteCard.user_click_delete_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click confirm delete button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "DeleteCard.click_confirm_delete_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Card should be deleted",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DeleteCard.card_should_be_deleted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "I launch chrome browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateSteps.i_launch_chrome_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersEmail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click Log with in atlassian button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateSteps.click_Log_with_in_atlassian_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters Password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateSteps.userEntersPassword()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Delete board",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "User click KZA board",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "AddCardToTheList.user_click_KZA_board()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click show menu button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "DeleteBoard.click_show_menu_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click open more button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DeleteBoard.click_open_more_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User click close board button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "DeleteBoard.user_click_close_board_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click confirm close button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DeleteBoard.click_confirm_close_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User click Permanently delete button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "DeleteBoard.user_click_Permanently_delete_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click confirm delete buttons",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "DeleteBoard.Click_confirm_delete_buttons()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Board should be deleted",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DeleteBoard.board_should_be_deleted()"
+});
+formatter.result({
+  "status": "passed"
 });
 });

@@ -1,11 +1,12 @@
 package kzapro.pages;
 
+import kzapro.utilities.TestBase;
 import kzapro.utilities.TestUtilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DeleteBoardPage extends TestBase{
+public class DeleteBoardPage extends TestBase {
     @FindBy (xpath = "//span[normalize-space()='Show menu']")
     WebElement showMenuButton;
     @FindBy (xpath = "//a[@class='board-menu-navigation-item-link js-open-more']")

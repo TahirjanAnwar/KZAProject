@@ -2,7 +2,7 @@ package stepDefinitions;
 
 import cucumber.api.java.en.*;
 import cucumber.api.java.en.When;
-import kzapro.pages.TestBase;
+import kzapro.utilities.TestBase;
 import kzapro.pages.UpdateCardPage;
 import kzapro.utilities.TestUtilities;
 import org.junit.Assert;

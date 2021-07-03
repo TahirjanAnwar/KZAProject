@@ -2,7 +2,7 @@ package stepDefinitions;
 
 import cucumber.api.java.en.*;
 import kzapro.pages.DeleteCardPage;
-import kzapro.pages.TestBase;
+import kzapro.utilities.TestBase;
 import kzapro.utilities.TestUtilities;
 import org.junit.Assert;
 import org.openqa.selenium.By;

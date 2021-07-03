@@ -1,5 +1,6 @@
 package kzapro.pages;
 
+import kzapro.utilities.TestBase;
 import kzapro.utilities.TestUtilities;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
