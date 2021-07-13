@@ -21,7 +21,7 @@ public class KZAboardPage extends TestBase {
     WebElement addListForInProgressTextBox;
     @FindBy(xpath = "//input[@type='submit']")
     WebElement addListForInProgressLink;
-    @FindBy(xpath = "//input[@class='list-name-input']")
+    @FindBy(xpath = "//input[@name='name']")
     WebElement addListForDoneTextBox;
     @FindBy(xpath = "//input[@value='Add list']")
     WebElement addListForDoneLink;

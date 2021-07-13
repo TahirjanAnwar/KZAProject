@@ -48,8 +48,8 @@ public class AddCardToTheList extends TestBase {
 
     @Then("New card we added should be displayed")
     public void new_card_we_added_should_be_displayed() {
-
-        Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Add another card']")).isDisplayed());
+        TestUtilities.sleep(3);
+        Assert.assertTrue(driver.findElement(By.xpath("//h1[normalize-space()='KZA Board']")).isDisplayed());
         driver.close();
         driver.quit();
 

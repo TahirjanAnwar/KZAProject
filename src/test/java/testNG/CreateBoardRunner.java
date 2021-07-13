@@ -77,7 +77,8 @@ public class CreateBoardRunner extends TestBase {
         kzAboardPage.clickAddCart(prop.getProperty("cardName"));
         kzAboardPage.clickAddCartButton();
         kzAboardPage.clickCancelButtonForAddCart();
-        Assert.assertTrue(driver.findElement(By.xpath("//span[text()='Add another card']")).isDisplayed());
+        TestUtilities.sleep(3);
+        Assert.assertTrue(driver.findElement(By.xpath("//span[@class='placeholder']")).isDisplayed());
 
     }
     @Test(priority = 4)
@@ -135,29 +136,6 @@ public class CreateBoardRunner extends TestBase {
 
     }
 
-
-    @Test(enabled = false)
-    public void test()
-    {
-        homePage=new HomePage();
-        createBoardPage=homePage.clickLink();
-        createBoardPage=new CreateBoardPage();
-        createBoardPage.addBoardTitle(prop.getProperty("boardName"));
-        createBoardPage.clickButton();
-        kzAboardPage=new KZAboardPage();
-        kzAboardPage.clickAddListForToDoTextBox(prop.getProperty("toDoListName"));
-        kzAboardPage.clickAddListForToDoLink();
-        TestUtilities.sleep(3);
-        kzAboardPage.addListForInProgressTextBox(prop.getProperty("inProgressListName"));
-        kzAboardPage.clickAddListForInProgressLink();
-        TestUtilities.sleep(3);
-        kzAboardPage.addListForDoneTextBox(prop.getProperty("doneListName"));
-        kzAboardPage.clickAddListForDoneLink();
-        kzAboardPage.clickCancelButton();
-        TestUtilities.sleep(3);
-        Assert.assertTrue(driver.findElement(By.xpath("//span[@class='placeholder']")).isDisplayed());
-
-    }
 
 
 
